@@ -7,10 +7,10 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="shortcut icon" href="images/favicon.ico">
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-	</head>
+<link href="https://fonts.googleapis.com/css?family=Hind+Guntur" rel="stylesheet">
+</head>
 	<body class="index">
 		<div id="page-wrapper">
 
@@ -45,7 +45,7 @@
 					<div class="inner">
 
 						<header>
-							<h2>Nick Vizzutti</h2>
+							<h2 id='name-title'>Nick Vizzutti</h2>
 						</header>
 						<p><strong>Software</strong> and <strong>Web</strong>
 							 Developer <br/>San Francisco, California
@@ -70,10 +70,12 @@
 						<h2>Developing Software, You Are <strong>Always</strong> Gaining Knowledge,
 						<br /> but can <strong>Never</strong> understand everything.
 						</h2>
-						<p>I love that software can be used for <strong>anything.</strong>
-						It does not serve a single purpose,
-						<br />
-						As technology grows, so the does the opportunity to expand and <strong>share</strong> knowledge.
+						<p>I love how development requires using <strong>creative</strong>
+						thinking to solve <strong>technical</strong> problems, and
+						<!-- Software serves no
+						single purpose, and its value depends upon the ability to build a logical
+						system from a conceptual idea.  -->
+						as technology grows, so the does the opportunity to expand and <strong>share</strong> knowledge.
 					</header>
 					<!-- One -->
 						<section class="wrapper style2 container special-alt">
@@ -81,11 +83,11 @@
 								<div class="8u 12u(narrower)">
 
 									<header>
-										<h2><strong>My primary skills</strong> include Ruby on Rails, React/Redux, JavaScript, jQuery, and HTML/CSS</h2>
+										<h2><strong>My primary skills</strong> include Ruby on Rails, React/Redux, JavaScript, jQuery, SQL, and HTML/CSS</h2>
 									</header>
 									<p>
-										I also have experience with mobile development using Android Studio with Java and XML, Node.js, Rspec, and collaboration through git.
-										My background is in Design, and while I love pretty things, I prefer the technical.
+										I also have experience with mobile development using Android Studio with Java and XML, Node.js, Rspec, AJAX, and jBuilder.
+										My background is in Design, and while I love pretty things, I prefer finding creative solutions to solve technical problems.
 										Nothing beats the feeling of methodically crafting a creative solution to a technical problem.
 									</p>
 									<footer>
@@ -112,44 +114,59 @@
 
 					<!-- Two -->
 						<section class="wrapper style1 container special">
+							<header>
+								<h2>What have I built recently?</h2>
+							</header>
 							<div class="row">
 								<div class="4u 12u(narrower)">
-
 									<section>
-										<span class="icon featured fa-check"></span>
+										<span class="icon featured fa-trophy"></span>
 										<header>
 											<h3>Full Stack Web Application</h3>
 										</header>
-										<p>Single-page web application developed in JavaScript with React,
+										<strong>
+											<a href='http://sportswithstrangers.online' target="_blank">
+											Sports with Strangers
+										</a>
+										</strong>
+										<p class='justified'>Single-page web application to facilitate meet-ups
+											for sporting events. Developed in JavaScript with React,
 											 Redux, and jQuery on the frontend.
-										The backend utilizes Ruby on Rails to manage a postgreSQL database,
-										 with jBuilder to architect API responses. Developed as a solo project.</p>
+										The backend utilizes Ruby on Rails coupled with a postgreSQL database,
+										 and jBuilder to architect API responses. Developed as a solo project.</p>
 										</section>
 								</div>
 								<div class="4u 12u(narrower)">
-
 									<section>
-										<span class="icon featured fa-check"></span>
+										<span class="icon featured fa-picture-o"></span>
 										<header>
-											<h3>JavaScript Web Demo</h3>
+											<h3>JavaScript Web Demonstration</h3>
 										</header>
-										<p>Demonstration of image processing techniques, implemented in JavaScript.
-										Image filtering algorithms were adapted for use with HTML5 DOM Objects.
-									Build primarily in vanillaJS with jQuery for DOM text manipulation. </p>
+										<a href="http://nvizzutti.github.io/pixelary" target="_blank">
+										<strong>Pixelary</strong></a>
+										<p class='justified'>Demo of familiar image processing filters presented
+											 in the form of pictionary, written in JavaScript.
+											 Image filtering algorithms were adapted for use with HTML5 DOM elements.
+									Built primarily in vanillaJS with jQuery for DOM text manipulation.
+								Developed as a solo project. </p>
 									</section>
 
 								</div>
 								<div class="4u 12u(narrower)">
 
 									<section>
-										<span class="icon featured fa-check"></span>
+										<span class="icon featured fa-cutlery"></span>
 										<header>
-											<h3>Android Mobile App</h3>
+											<h3>Android Mobile Application</h3>
 										</header>
-										<p>
-											Platform for sharing food photography and discovering new recipes.
+										<a href="http://nvizzutti.github.io/CheffyPix-Demo/#into" target="_blank">
+										<strong>CheffyPix</strong>
+									</a>
+										<p class='justified'>
+											Platform for sharing food photography and finding new recipes.
 											Developed in Android Studio using Java and XML. Handles
 											calls to Food2Fork API asynchronously and parses JSON to create new Bitmaps.
+											Developed in collaboration with Kathy Luo and Michael Mach.
 										</p>
 									</section>
 
@@ -168,11 +185,16 @@
 							<div class="row">
 								<div class="6u 12u(narrower)">
 									<section>
-										<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
+										<a href="#" class="image featured"><img src="images/swsPreview.png" /></a>
 										<header>
-											<h3>A Really Fast Train</h3>
+											<h3>Sports with Strangers</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										<p>
+											Sports with Strangers is an application taking inspiration from
+											<a href="http://www.teawithstrangers.com" target="_blank">Tea with Strangers</a>,
+											which gives users a platform to join local meet-ups to watch sporting events,
+											find new fans in their home city, or host meet-ups themselves.
+										</p>
 									</section>
 
 								</div>
@@ -181,9 +203,15 @@
 									<section>
 										<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
 										<header>
-											<h3>An Airport Terminal</h3>
+											<h3>Pixelary</h3>
 										</header>
-										<p>Sed tristique purus vitae volutpat commodo suscipit amet sed nibh. Proin a ullamcorper sed blandit. Sed tristique purus vitae volutpat commodo suscipit ullamcorper sed blandit lorem ipsum dolore.</p>
+										<p>
+											Pixelary is a recreation of pictionary meant to demonstrate image processing
+											in an engaging way. The script extracts an array of RGBA values from an image and
+											rebuilds it pixel-by-pixel with a filter applied. Algorithms for each image filter
+											were adapted into JavaScript and applied in increments to achieve an animation effect.
+										  
+										</p>
 									</section>
 
 								</div>

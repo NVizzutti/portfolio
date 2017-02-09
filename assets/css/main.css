@@ -48,6 +48,11 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	.justified {
+		text-align: justify;
+		/*letter-spacing: .5px;*/
+	}
+
 /* Box Model */
 
 	*, *:before, *:after {
@@ -1574,6 +1579,11 @@
 		line-height: 1.75em;
 	}
 
+	#name-title {
+		padding-top: 2px;
+		font-weight: lighter;
+	}
+
 	a {
 		-moz-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
@@ -1644,7 +1654,7 @@
 		padding: 1em 0 1em 2em;
 	}
 
-/* Section/Article */
+/* /Article */
 
 	section.special, article.special {
 		text-align: center;
@@ -2106,8 +2116,7 @@
 		}
 
 		.wrapper.style2 {
-			background-color: #8c7ec3;
-			background-image: url("images/light-bl.svg"), url("images/light-br.svg");
+			background-color: #5a76a2;
 			background-position: bottom left, bottom right;
 			background-repeat: no-repeat, no-repeat;
 			background-size: 25em, 25em;
@@ -2183,9 +2192,9 @@
 	}
 
 	#header {
-		background: #fff;
-		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.075);
-		color: inherit;
+		background: rgb(49, 66, 103);
+		box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+		color: white;
 		cursor: default;
 		font-size: 0.8em;
 		left: 0;
@@ -2263,7 +2272,7 @@
 					-webkit-transition: all 0.2s ease-in-out;
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
-					background: rgba(188, 202, 206, 0.15);
+					background: rgb(49, 66, 103);
 				}
 
 				#header nav ul li.current > a {
@@ -2271,6 +2280,8 @@
 				}
 
 		#header.reveal {
+			background-color: rgb(49, 66, 103);
+			color: white;
 			-moz-animation: reveal-header 0.5s;
 			-webkit-animation: reveal-header 0.5s;
 			-ms-animation: reveal-header 0.5s;
@@ -2278,6 +2289,7 @@
 		}
 
 		#header.alt {
+			background-color: #0b1c37;
 			-moz-animation: none;
 			-webkit-animation: none;
 			-ms-animation: none;
