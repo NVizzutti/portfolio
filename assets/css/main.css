@@ -1859,21 +1859,21 @@
 				top: -0.2em;
 			}
 
-			.icon.circle.fa-twitter {
+			.icon.circle.fa-envelope {
 				background: #70aecd;
 				color: #fff;
 			}
 
-				.icon.circle.fa-twitter:hover {
+				.icon.circle.fa-envelope:hover {
 					background: #7fb7d2;
 				}
 
-			.icon.circle.fa-facebook {
+			.icon.circle.fa-linkedin {
 				background: #7490c3;
 				color: #fff;
 			}
 
-				.icon.circle.fa-facebook:hover {
+				.icon.circle.fa-linkedin:hover {
 					background: #829bc9;
 				}
 
@@ -1895,12 +1895,12 @@
 					background: #e1b89b;
 				}
 
-			.icon.circle.fa-dribbble {
+			.icon.circle.fa-angellist {
 				background: #da83ae;
 				color: #fff;
 			}
 
-				.icon.circle.fa-dribbble:hover {
+				.icon.circle.fa-angellist:hover {
 					background: #df93b8;
 				}
 
@@ -2075,8 +2075,8 @@
 		input[type="submit"].special,
 		input[type="reset"].special,
 		.button.special {
-			background: #83d3c9;
-			border-color: #83d3c9;
+			background: #4A75A4;
+			border-color: #34506f;
 			color: #fff !important;
 		}
 
@@ -2084,8 +2084,8 @@
 			input[type="submit"].special:hover,
 			input[type="reset"].special:hover,
 			.button.special:hover {
-				background: #96dad1 !important;
-				border-color: #96dad1 !important;
+				background: #6b9fd8 !important;
+				border-color: #4A75A4 !important;
 			}
 
 		input[type="button"].fit,
@@ -2482,6 +2482,15 @@
 
 		#main > :last-child {
 			margin-bottom: 0;
+			font-size: 20px;
+		}
+
+		#contact-content {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			margin: 20px;
+			padding: 5px;
 		}
 
 		#main .sidebar section {
