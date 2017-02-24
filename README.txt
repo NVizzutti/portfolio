@@ -1,3 +1,5 @@
+Portfolio Website Created with JavaScript/jQuery
+
 Credits:
 
 	Icons:
